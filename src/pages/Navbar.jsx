@@ -38,7 +38,7 @@ const Navbar1 = memo(() => {
             <li  onClick={_=> Navigate("/")}><Link to="/">  الرئيسية  </Link></li>
             <li  onClick={_=> Navigate("/services")}><Link to="/services">   الخدمات  </Link></li>
             <li  onClick={_=> Navigate("/about-us")}><Link to="/about-us">    حولنا  </Link></li>
-            <li  onClick={_=> Navigate("/")}><Link to="/">   تواصل معنا </Link></li>
+            <li  onClick={_=> Navigate("/contact-us")}><Link to="/contact-us">   تواصل معنا </Link></li>
 
           </ul>
         </div>
