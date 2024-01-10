@@ -2,7 +2,9 @@ import React from 'react'
 import Navbar1 from './Navbar'
 import ImgIntro from "../assets/bg-about.jpg"
 import ImgSectionFooter from "../assets/bg2.png"
-
+import About2 from "../assets/about2.jpg"
+import About3 from "../assets/about3.jpg"
+import About4 from "../assets/about4.jpg"
 
 const About = () => {
   return (
@@ -15,12 +17,12 @@ const About = () => {
     <div class="about">
     <div class="top bs-white">
       <div class="container">
-      <div class="coverImg"> <img src="https://img.freepik.com/free-photo/human-hands-open-palm-up-worship_1150-7245.jpg?size=626&ext=jpg&ga=GA1.1.1988574402.1703486342&semt=ais" alt=""/> </div>
+      <div class="coverImg"> <img src={About2} alt=""/> </div>
       <div class="text">
         <div class="p">في قلب الإمارات، يقف مركز بركة الوقف كمؤسسة رائدة في مجال الأوقاف، متميزًا برؤيته العميقة ومهمته الملهمة. تأسس المركز برسالة واضحة: خدمة الواقفين، النظّار، وجميع المهتمين بعالم الأوقاف. نحن هنا ليس فقط للإدارة الفعّالة للأوقاف، بل أيضًا لنشر ثقافة الوقف وتعزيز مفهوم الاستدامة في المجتمع.</div>
         <div class="p">في مركز بركة الوقف، نتبنى نهجًا مؤسسيًا يستند إلى المنهجية العلمية. نسعى لتحقيق التميز والريادة في العمل الوقفي على مستوى الإمارات، مع التزامنا بتقديم خدمات على أعلى مستوى من الكفاءة والجودة. نعمل جاهدين لتحليل الفرص والتحديات التي تواجه الأوقاف، مما يجعلنا الوجهة المثالية لكل من يسعى لفهم وتطبيق مفاهيم الوقف بطريقة عصرية وفعّالة.</div>
-        <div class="p">نحن في مركز بركة الوقف نؤمن بأن الأوقاف تمثل أداة قوية للتنمية المستدامة والتأثير الاجتماعي. لذا، نحن ملتزمون بتقديم خدمات متنوعة ومبتكرة تلبي احتياجات الواقفين والنظّار وجميع المهتمين بالأوقاف. من خلال تحليل دقيق لواقع الأوقاف وإمكانياتها، نسعى إلى تقديم حلول عملية لأي تحديات قد تواجهها، بينما نستعد لمواجهة أيّة أزمات محتملة بفعالية وحكمة.</div>
-        <div class="p">نفتخر في مركز بركة الوقف بأننا نعمل يوميًا على ترسيخ مكانتنا كقائد للعمل الوقفي في الإمارات، مساهمين في تشكيل مستقبل الأوقاف بما يخدم المجتمع ويدعم مسيرة التنمية المستدامة.</div>
+        <div class="p">نحن  نؤمن بأن الأوقاف تمثل أداة قوية للتنمية المستدامة والتأثير الاجتماعي. لذا، نحن ملتزمون بتقديم خدمات متنوعة ومبتكرة تلبي احتياجات الواقفين والنظّار وجميع المهتمين بالأوقاف. من خلال تحليل دقيق لواقع الأوقاف وإمكانياتها، نسعى إلى تقديم حلول عملية لأي تحديات قد تواجهها، بينما نستعد لمواجهة أيّة أزمات محتملة بفعالية وحكمة.</div>
+        <div class="p">نفتخر  بأننا نعمل يوميًا على ترسيخ مكانتنا كقائد للعمل الوقفي في الإمارات، مساهمين في تشكيل مستقبل الأوقاف بما يخدم المجتمع ويدعم مسيرة التنمية المستدامة.</div>
       </div>
     </div>
   </div>
@@ -42,7 +44,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="coverImg"> <img src="https://img.freepik.com/free-photo/muslim-man-reading-from-quran-holding-praying-beads_23-2148444094.jpg?size=626&ext=jpg&ga=GA1.1.1988574402.1703486342&semt=ais" alt=""/> </div>
+      <div className="coverImg"> <img src={About3} alt=""/> </div>
 
     </div>
     </div>
@@ -72,7 +74,7 @@ const About = () => {
   <div class="goals">
     <div class="h1"> الأهداف </div>
     <div class="container">
-      <div className="coverImg"> <img src="https://img.freepik.com/free-photo/person-holding-rosary-religious-book_23-2148629936.jpg?size=626&ext=jpg&ga=GA1.1.1988574402.1703486342&semt=ais" alt=""/>   </div>
+      <div className="coverImg"> <img src={About4} alt=""/>   </div>
       <div class="boxes">
 
         <div class="box">

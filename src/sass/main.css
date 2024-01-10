@@ -1191,8 +1191,8 @@ footer .bottom .container .p span {
   height: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 3px solid white;
-  outline: 3px solid var(--green);
+  border: 2px solid white;
+  outline: 2px solid var(--green);
 }
 .about .center .container .boxes {
   display: flex;
@@ -1209,8 +1209,8 @@ footer .bottom .container .p span {
   justify-content: center;
   background-color: white;
   padding: 10px;
-  border: 3px solid var(--main);
-  outline: 3px solid var(--green);
+  border: 2px solid var(--main);
+  outline: 2px solid var(--green);
 }
 .about .center .container .boxes .box .h2-right {
   margin-bottom: 30px;
@@ -1251,8 +1251,8 @@ footer .bottom .container .p span {
 .vission .container .box {
   background-color: rgba(233, 233, 233, 0.368627451);
   padding: 10px;
-  border: 3px solid white;
-  outline: 3px solid var(--green);
+  border: 2px solid white;
+  outline: 2px solid var(--green);
 }
 .vission .container .box .h2-right {
   color: var(--green);
@@ -1317,7 +1317,7 @@ footer .bottom .container .p span {
   }
 }
 .goals .container .coverImg {
-  height: 550px;
+  height: 600px;
   width: 100%;
 }
 .goals .container .coverImg img {
@@ -1325,8 +1325,8 @@ footer .bottom .container .p span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 3px solid white;
-  outline: 3px solid var(--green);
+  border: 2px solid white;
+  outline: 2px solid var(--green);
 }
 .goals .container .boxes {
   display: grid;
@@ -1336,12 +1336,15 @@ footer .bottom .container .p span {
   width: 100%;
 }
 .goals .container .boxes .box {
-  border: 3px solid var(--main);
-  outline: 3px solid var(--green);
+  border: 2px solid var(--main);
+  outline: 2px solid var(--green);
   background-color: white;
   padding: 5px;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .goals .container .boxes .box .h1-right {
   margin-bottom: 5px;
@@ -1351,35 +1354,87 @@ footer .bottom .container .p span {
   padding: 50px 0;
   position: relative;
   min-height: 600px;
+  background: var(--main);
+  background: #dde1e7;
 }
 .services-page .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 1250px) {
+  .services-page .container {
+    grid-template-columns: 1fr;
+  }
+}
 .services-page .container .box {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 80px 1fr;
   align-items: center;
+  padding: 20px;
+  border-radius: 3px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45), 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+.services-page .container .box::after {
+  content: "";
+  position: absolute;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: inset -5px -5px 9px rgba(255, 255, 255, 0.45), inset 5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+@media (max-width: 800px) {
+  .services-page .container .box {
+    grid-template-columns: 1fr;
+  }
+  .services-page .container .box img {
+    order: -1 !important;
+  }
+  .services-page .container .box .h2-right::after, .services-page .container .box .h2-right::before {
+    right: 50% !important;
+    transform: translate(50%);
+  }
+  .services-page .container .box .h2-right, .services-page .container .box .p {
+    text-align: center !important;
+  }
 }
 .services-page .container .box:nth-child(2), .services-page .container .box:nth-child(4), .services-page .container .box:nth-child(6) {
-  background-color: var(--main);
+  grid-template-columns: 1fr 80px !important;
+}
+.services-page .container .box:nth-child(2) .text::after, .services-page .container .box:nth-child(4) .text::after, .services-page .container .box:nth-child(6) .text::after {
+  left: 0 !important;
+  right: unset !important;
 }
 .services-page .container .box:nth-child(2) img, .services-page .container .box:nth-child(4) img, .services-page .container .box:nth-child(6) img {
   order: 2;
 }
 .services-page .container .box img {
   width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 3px solid var(--green);
-  box-sizing: border-box;
+  height: 80px;
 }
 .services-page .container .box .text {
-  padding: 10px;
+  padding: 20px;
+  position: relative;
+}
+.services-page .container .box .text::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  right: 0;
+  top: 0;
+  background-color: var(--green);
+  z-index: 10;
 }
 .Navbar1 {
   min-height: 83px;
@@ -1615,7 +1670,6 @@ footer .bottom .container .p span {
   .Navbar1 nav .navbar .links li a {
     text-align: right;
     font-size: 16px !important;
-    display: block;
   }
 }
 @media (max-width: 800px) {

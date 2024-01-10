@@ -1310,8 +1310,8 @@ footer {
           width: 100%;
           height: 100% !important;
           object-fit: cover;
-          border: 3px solid white;
-          outline: 3px solid var(--green);
+          border: 2px solid white;
+          outline: 2px solid var(--green);
         }
       }
 
@@ -1329,8 +1329,8 @@ footer {
           justify-content: center;
           background-color: white;
           padding: 10px;
-          border: 3px solid var(--main);
-          outline: 3px solid var(--green);
+          border: 2px solid var(--main);
+          outline: 2px solid var(--green);
 
           .h2-right {
             margin-bottom: 30px;
@@ -1378,8 +1378,8 @@ footer {
     .box {
       background-color: #e9e9e95e;
       padding: 10px;
-      border: 3px solid white;
-      outline: 3px solid var(--green);
+      border: 2px solid white;
+      outline: 2px solid var(--green);
 
       .h2-right {
         color: var(--green);
@@ -1455,14 +1455,14 @@ footer {
     }
 
     .coverImg {
-      height: 550px;
+      height: 600px;
       width: 100%;
       img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border: 3px solid white;
-      outline: 3px solid var(--green);
+      border: 2px solid white;
+      outline: 2px solid var(--green);
     }}
 
     .boxes {
@@ -1472,12 +1472,15 @@ footer {
       height: 100%;
       width: 100%;
       .box {
-        border: 3px solid var(--main);
-        outline: 3px solid var(--green);
+        border: 2px solid var(--main);
+        outline: 2px solid var(--green);
         background-color: white;
         padding: 5px;
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .h1-right {
           margin-bottom: 5px;
         }
@@ -1492,24 +1495,64 @@ footer {
   padding: 50px 0;
   position: relative;
   min-height: 600px;
+  background: var(--main);
+  background: #dde1e7;
 
   .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-
+    @media (max-width:1250px) {
+      grid-template-columns: 1fr ;
+    }
     .box {
       display: grid;
       gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: 80px 1fr;
       align-items: center;
-
+      padding: 20px;
+      border-radius: 3px;
+      position: relative;
+      border-radius: 4px;
+      box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+      &::after{
+        content: '';
+        position: absolute;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        top: 10px;
+        left: 10px;
+        background-color: transparent;
+        border-radius: 4px;
+        box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+      }
+      @media (max-width:800px) {
+        grid-template-columns: 1fr;
+        img{
+          order: -1 !important;
+        }
+        .h2-right::after , .h2-right::before {
+          right: 50% !important;
+          transform: translate(50%);
+        }
+        .h2-right , .p {
+          text-align: center !important;
+        }
+      }
       &:nth-child(2),
       &:nth-child(4),
       &:nth-child(6) {
-        background-color: var(--main);
-
+        grid-template-columns: 1fr 80px !important;
+        .text{
+          &::after{
+            left: 0 !important;
+            right: unset !important;
+          }
+        }
         img {
           order: 2;
         }
@@ -1517,15 +1560,22 @@ footer {
 
       img {
         width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border: 3px solid var(--green);
-        box-sizing: border-box;
+        height: 80px;
       }
 
       .text {
-        padding: 10px;
-
+        padding: 20px;
+        position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            right: 0;
+            top: 0;
+            background-color: var(--green);
+            z-index: 10;
+          }
         .h2-right {}
 
         .p {}
@@ -1797,9 +1847,9 @@ footer {
     nav .navbar .links li a {
       text-align: right;
       font-size: 16px !important;
-      display: block;
     }
   }
+
 
   @media (max-width:800px) {
 
