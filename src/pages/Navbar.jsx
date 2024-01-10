@@ -35,10 +35,10 @@ const Navbar1 = memo(() => {
           <div className="sidebar-logo">   <span className="logo-name"><img src={Logo} alt="Navbar"  /></span>   <i className='bx bx-x' ></i> </div>
           
           <ul className="links">
-            <li  onClick={_=> Navigate("/")}><Link to="/">   تواصل معنا </Link></li>
-            <li  onClick={_=> Navigate("/")}><Link to="/">   الخدمات  </Link></li>
-            <li  onClick={_=> Navigate("/")}><Link to="/">    حولنا  </Link></li>
             <li  onClick={_=> Navigate("/")}><Link to="/">  الرئيسية  </Link></li>
+            <li  onClick={_=> Navigate("/services")}><Link to="/services">   الخدمات  </Link></li>
+            <li  onClick={_=> Navigate("/about-us")}><Link to="/about-us">    حولنا  </Link></li>
+            <li  onClick={_=> Navigate("/")}><Link to="/">   تواصل معنا </Link></li>
 
           </ul>
         </div>

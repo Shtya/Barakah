@@ -12,22 +12,23 @@ const Home = () => {
         <div className="container"> <Navbar1 /> </div>
         <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
       </div>
-  <div class="section1">
-    <div class="container">
-      <div class="boxes">
-        <div class="coverImg"> <img src="https://iili.io/J7eDZMP.jpg" alt=""/> </div>
-        <div class="box">
-          <div class="h1-right">مركز بركة الوقف</div>
-          <div class="p">مؤسسة رائدة في مجال الأوقاف، تأسست برؤية لخدمة الواقفين و النظّار وجميع المهتمين بالأوقاف. نتبنى في مركزنا نهجًا مؤسسيًا معتمدًا على المنهجية العلمية لنشر ثقافة الوقف وتعزيز مفهوم الاستدامة في المجتمع. 
-            نسعى دائمًا لأن يكون مركزنا رائدًا للعمل الوقفي في الإمارات، مع التزامنا بتقديم خدمات على أعلى مستوى من الكفاءة والجودة.
-             نحرص على متابعة وتحليل الفرص والتحديات التي تواجه الأوقاف، ليكون مركز بركة الوقف هو الوجهة المثالية لكل من يسعى لفهم وتطبيق مفاهيم الوقف بطريقة عصرية وفعّالة.
+      
+      <div class="section1">
+        <div class="container">
+          <div class="boxes">
+            <div class="coverImg"> <img src="https://iili.io/J7eDZMP.jpg" alt=""/> </div>
+            <div class="box">
+              <div class="h1-right">مركز بركة الوقف</div>
+              <div class="p">مؤسسة رائدة في مجال الأوقاف، تأسست برؤية لخدمة الواقفين و النظّار وجميع المهتمين بالأوقاف. نتبنى في مركزنا نهجًا مؤسسيًا معتمدًا على المنهجية العلمية لنشر ثقافة الوقف وتعزيز مفهوم الاستدامة في المجتمع. 
+                نسعى دائمًا لأن يكون مركزنا رائدًا للعمل الوقفي في الإمارات، مع التزامنا بتقديم خدمات على أعلى مستوى من الكفاءة والجودة.
+                نحرص على متابعة وتحليل الفرص والتحديات التي تواجه الأوقاف، ليكون مركز بركة الوقف هو الوجهة المثالية لكل من يسعى لفهم وتطبيق مفاهيم الوقف بطريقة عصرية وفعّالة.
+                </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="section2">
+  <div class="section2 bs-white">
     <div class="h1"> الأهداف </div>
     <div class="container">
 
@@ -141,7 +142,7 @@ const Home = () => {
     </div>
   </div>
 
-  <div class="partners">
+  <div class="partners bs-white">
     <div class="h1"> شركائنا</div>
     <div class="phead">شركاء في بناء مستقبل أوقافًا مستدامة</div>
     <div class="container">
@@ -217,7 +218,7 @@ const Home = () => {
     </div>
   </div>
 
-  <div class="contact">
+  <div class="contact bs-white">
     <div class="container">
       <div class="right"> <img src="https://iili.io/J7koZW7.png" alt=""/> </div>
       <div class="middle">
