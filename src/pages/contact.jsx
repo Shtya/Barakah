@@ -17,7 +17,7 @@ const ContactUs = () => {
   // } ,[])
 
   return (
-    <>
+    <div id='up'>
     
         <div className="container"> <Navbar1 /> </div>
         <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
@@ -98,7 +98,7 @@ const ContactUs = () => {
     </div>
   </div>
   </footer>
-    </>
+    </div>
   )
 }
 

@@ -34,6 +34,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -252,6 +256,44 @@ body {
   position: relative;
   box-shadow: 0 -2px 5px rgba(153, 153, 153, 0.3294117647), 0 2px 5px rgba(153, 153, 153, 0.3294117647);
   z-index: 1;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+.up a {
+  width: 40px;
+  height: 40px;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.up a:nth-child(1) {
+  background-color: unset;
+}
+.up a:nth-child(2) {
+  height: 30px;
+}
+.up a:nth-child(2) img {
+  height: 25px;
+}
+.up a:hover {
+  scale: 0.95;
+}
+.up a img {
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
 }
 
 .container {
@@ -2050,6 +2092,41 @@ footer .bottom .container .p span {
 .pagination .btn-selected {
   background-color: var(--green);
   color: #fff;
+}
+
+.error {
+  min-height: 100vh;
+  background-color: #fefcf0;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .error img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+  .error .bt {
+    bottom: 40px !important;
+  }
+}
+.error .coverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.error .coverImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.error .bt {
+  position: absolute;
+  z-index: 10;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .Navbar1 {

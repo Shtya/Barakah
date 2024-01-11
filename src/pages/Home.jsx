@@ -10,7 +10,7 @@ import share from "../assets/share.png"
 
 const Home = () => {
   return (
-    <div className='all'>
+    <div className='all' id='up'>
       <div className="hero">
         <div className="container"> <Navbar1 /> </div>
         <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>

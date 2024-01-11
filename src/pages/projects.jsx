@@ -32,7 +32,7 @@ const Projects = () => {
 
 
   return (
-    <div className='projects-page' >
+    <div className='projects-page' id='up' >
       <div className="container"> <Navbar1 /> </div>
       <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
       

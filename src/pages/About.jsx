@@ -8,7 +8,7 @@ import About4 from "../assets/about4.jpg"
 
 const About = () => {
   return (
-    <>
+    <div id='up'>
     <div className="hero">
         <div className="container"> <Navbar1 /> </div>
         <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
@@ -148,7 +148,7 @@ const About = () => {
   </div>
 </div>
 </footer>
-    </>
+    </div>
   )
 }
 

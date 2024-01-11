@@ -8,7 +8,7 @@ import share from "../assets/share.png"
 const Blogs = () => {
 
   return (
-    <div className='blogs-page'>
+    <div className='blogs-page' id='up'>
     <div className="container"> <Navbar1 /> </div>
     <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
 
