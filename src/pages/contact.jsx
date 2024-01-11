@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar1 from './Navbar'
 import ImgSectionFooter from "../assets/bg2.png"
-import ImgSectionContact from "../assets/contact-us.jpg"
+import ImgSectionContact from "../assets/contactus.jpg"
+
 
 import place from "../assets/place.png"
 import email from "../assets/email.png"
 import phone from "../assets/phone.png"
 import phone2 from "../assets/phone2.png"
+import ImgIntro from "../assets/contact-us.jpg"
 
 const ContactUs = () => {
+  // useEffect(_=>{
+  //   axios.get('http://localhost/project/wp-json/wp/v2/posts').then(response => console.log(response.data))
+
+  // } ,[])
+
   return (
     <>
-    <div className="hero">
+    
         <div className="container"> <Navbar1 /> </div>
-      </div>
+        <div className="coverIntro hidden-img"> <img src={ImgIntro} alt="intro page contains word 'about us '" /></div>
 
       <div class="contact-page bs-white">
     <div class="container">
@@ -28,18 +35,20 @@ const ContactUs = () => {
           <div class="bt"> تقديم</div>
         </form>
 
-        <div className="information">
-          <div> <div className="coverImg"> <img src={place } /></div>  <div className="h2"> 10 A st., Villa 47 Umm Al Sheif, Dubai </div> </div>
-          <div> <div className="coverImg"> <img src={email } /></div>  <div className="h2">info@bwaqf.ae  </div> </div>
-          <div> <div className="coverImg"> <img src={phone } /></div>  <div className="h2"> +971554541122 </div> </div>
-          <div> <div className="coverImg"> <img src={phone2} /></div>  <div className="h2"> +97143339645 </div> </div>
-        </div>
-
       </div>
       <div class="left">
         <img src={ImgSectionContact} alt=""/>
         
       </div>
+    </div>
+    <div className="container">
+    <div className="information">
+          <div> <img src={place } />  <div className="h2"> 10 A st., Villa 47 Umm Al Sheif, Dubai </div> </div>
+          <div> <img src={email } />  <div className="h2">info@bwaqf.ae  </div> </div>
+          <div> <img src={phone } />  <div className="h2"> +971554541122 </div> </div>
+          <div> <img src={phone2} />  <div className="h2"> +97143339645 </div> </div>
+        </div>
+
     </div>
   </div>
 

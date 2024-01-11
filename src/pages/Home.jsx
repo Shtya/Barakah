@@ -4,6 +4,9 @@ import ImgSectionContact from "../assets/contactus.jpg"
 import ImgSectionFooter from "../assets/bg2.png"
 import Navbar1 from './Navbar'
 import ImgIntro from "../assets/bg2.jpg"
+import Imgblog from "../assets/blog/1.jpg"
+import share from "../assets/share.png"
+
 
 const Home = () => {
   return (
@@ -172,8 +175,8 @@ const Home = () => {
 
       <div class="box">
         <div class="coverImg">
-          <img class="main" src="https://demo.wenthemes.com/nature-bliss/wp-content/uploads/sites/43/2017/05/dolomites-2242017_640.jpg" alt=""/>
-          <img class="second" src="https://cdn-icons-png.flaticon.com/128/3389/3389172.png" alt=""/>
+          <img class="main" src={Imgblog} alt=""/>
+          <img class="second" src={share} alt=""/>
           <div class="box-data">
             <div class="num">18</div>
             <div class="month"> May </div>
@@ -187,8 +190,8 @@ const Home = () => {
       
       <div class="box">
         <div class="coverImg">
-          <img class="main" src="https://demo.wenthemes.com/nature-bliss/wp-content/uploads/sites/43/2017/05/dolomites-2242017_640.jpg" alt=""/>
-          <img class="second" src="https://cdn-icons-png.flaticon.com/128/3389/3389172.png" alt=""/>
+          <img class="main" src={Imgblog} alt=""/>
+          <img class="second" src={share} alt=""/>
           <div class="box-data">
             <div class="num">18</div>
             <div class="month"> May </div>
@@ -202,8 +205,8 @@ const Home = () => {
 
       <div class="box">
         <div class="coverImg">
-          <img class="main" src="https://demo.wenthemes.com/nature-bliss/wp-content/uploads/sites/43/2017/05/dolomites-2242017_640.jpg" alt=""/>
-          <img class="second" src="https://cdn-icons-png.flaticon.com/128/3389/3389172.png" alt=""/>
+          <img class="main" src={Imgblog} alt=""/>
+          <img class="second" src={share} alt=""/>
           <div class="box-data">
             <div class="num">18</div>
             <div class="month"> May </div>
