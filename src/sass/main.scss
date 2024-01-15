@@ -301,7 +301,10 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        background: white;
+        border-radius: 50%;
+        color: black;
+        overflow: hidden;
       }
     }
     &:hover{
@@ -2241,6 +2244,7 @@ footer {
   .btn-nav {
     padding: 8px;
     transition: .3s;
+    rotate: 180deg;
   }
   
   .btn-nav {

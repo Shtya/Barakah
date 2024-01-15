@@ -305,7 +305,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  background: white;
+  border-radius: 50%;
+  color: black;
+  overflow: hidden;
 }
 .up a:hover {
   scale: 0.95;
@@ -2194,6 +2197,7 @@ footer .bottom .container .p span {
 .pagination .btn-nav {
   padding: 8px;
   transition: 0.3s;
+  rotate: 180deg;
 }
 .pagination .btn-nav {
   width: 36px;
