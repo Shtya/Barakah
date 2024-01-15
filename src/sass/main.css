@@ -269,16 +269,23 @@ body {
   bottom: 20px;
   right: 20px;
   z-index: 10;
+  transition: 0.4s;
 }
 .up a {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: var(--green);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
   cursor: pointer;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+.up a img {
+  width: 100%;
+  height: 100%;
   transition: 0.2s;
 }
 .up a:nth-child(1) {
@@ -291,19 +298,17 @@ body {
   padding: 2px;
   background: transparent;
 }
-.up a:nth-child(2) img {
-  height: 30px;
-  width: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
+.up a:nth-child(2) i {
+  height: 50px;
+  width: 50px;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .up a:hover {
   scale: 0.95;
-}
-.up a img {
-  width: 30px;
-  height: 30px;
-  transition: 0.2s;
 }
 
 .container {
@@ -344,6 +349,11 @@ body {
   justify-content: center;
   background-color: var(--main);
   box-shadow: 0 0 10px #ccc;
+}
+@media (max-width: 600px) {
+  .section1 {
+    padding: 30px 0;
+  }
 }
 .section1 .container .boxes {
   display: grid;
@@ -400,6 +410,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: white;
+}
+@media (max-width: 600px) {
+  .section2 {
+    padding: 30px 0;
+  }
 }
 .section2 .container {
   display: grid;
@@ -583,6 +598,11 @@ body {
   background-color: var(--main);
   box-shadow: 0 0 10px #ccc inset;
 }
+@media (max-width: 600px) {
+  .services {
+    padding: 30px 0;
+  }
+}
 .services .bt {
   width: 150px;
   text-align: center;
@@ -656,21 +676,18 @@ body {
   justify-content: center;
   background-color: white;
 }
+@media (max-width: 600px) {
+  .partners {
+    padding: 30px 0;
+  }
+}
+.partners .slick-slide > div {
+  width: calc(100% - 20px);
+  margin: auto;
+}
 .partners .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
   align-items: center;
-}
-@media (max-width: 1200px) {
-  .partners .container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 650px) {
-  .partners .container {
-    grid-template-columns: 1fr;
-  }
 }
 .partners .container .box {
   width: 100%;
@@ -680,6 +697,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-right: 10px;
+  cursor: grab;
 }
 .partners .container .box img {
   border: 3px solid var(--green);
@@ -714,6 +733,11 @@ body {
   justify-content: center;
   background-color: var(--main);
   box-shadow: 0 0 10px #ccc inset;
+}
+@media (max-width: 600px) {
+  .blog {
+    padding: 30px 0;
+  }
 }
 .blog .container {
   display: grid;
@@ -824,6 +848,11 @@ body {
   justify-content: center;
   background-color: white;
 }
+@media (max-width: 600px) {
+  .contact {
+    padding: 30px 0 0;
+  }
+}
 .contact img {
   width: 40px;
   height: 40px;
@@ -841,6 +870,14 @@ body {
 @media (max-width: 900px) {
   .contact .container {
     grid-template-columns: 1fr;
+    padding: 0 0 50px;
+  }
+  .contact .container .h2-right {
+    text-align: center;
+  }
+  .contact .container .h2-right::after, .contact .container .h2-right::before {
+    right: 50%;
+    transform: translateX(50%);
   }
   .contact .container .right {
     height: 80px !important;
@@ -860,7 +897,8 @@ body {
   .contact .container .left {
     top: 0 !important;
     width: 100% !important;
-    margin: 20px 0 30px 0 !important;
+    margin: 0 0 10px 0 !important;
+    order: -1;
   }
 }
 @media (max-width: 700px) {
@@ -1159,6 +1197,11 @@ footer .bottom .container .p span {
   justify-content: center;
   background-color: white;
 }
+@media (max-width: 600px) {
+  .about .top {
+    padding: 30px 0;
+  }
+}
 .about .top .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1219,6 +1262,11 @@ footer .bottom .container .p span {
   align-items: center;
   justify-content: center;
   background-color: var(--main);
+}
+@media (max-width: 600px) {
+  .about .center {
+    padding: 30px 0;
+  }
 }
 .about .center .container {
   display: grid;
@@ -1379,6 +1427,11 @@ footer .bottom .container .p span {
   justify-content: center;
   background-color: var(--main);
 }
+@media (max-width: 600px) {
+  .goals {
+    padding: 30px 0;
+  }
+}
 .goals .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1430,6 +1483,11 @@ footer .bottom .container .p span {
   min-height: 600px;
   background: var(--main);
   background: #dde1e7;
+}
+@media (max-width: 600px) {
+  .services-page {
+    padding: 30px 0;
+  }
 }
 .services-page .container {
   display: grid;
@@ -1582,6 +1640,11 @@ footer .bottom .container .p span {
   background-color: rgba(255, 255, 255, 0.963);
   gap: 30px;
 }
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 30px 0;
+  }
+}
 .contact-page::after {
   content: "";
   position: absolute;
@@ -1626,15 +1689,15 @@ footer .bottom .container .p span {
   .contact-page .container:nth-child(1) {
     grid-template-columns: 1fr;
     width: 95% !important;
-    padding-bottom: 30px;
   }
   .contact-page .container:nth-child(1) .middle {
     min-height: unset !important;
     height: 500px !important;
     top: 0 !important;
-    margin: 10px 0 !important;
+    margin: 0 0 !important;
     outline: unset !important;
     border: unset !important;
+    margin-top: 15px !important;
   }
   .contact-page .container:nth-child(1) .middle input, .contact-page .container:nth-child(1) .middle textarea {
     font-size: 15px !important;
@@ -1653,7 +1716,8 @@ footer .bottom .container .p span {
   .contact-page .container:nth-child(1) .left {
     top: 0 !important;
     width: 100% !important;
-    margin: 20px 0 30px 0 !important;
+    margin: 0 0 20px 0 !important;
+    order: -1;
   }
 }
 @media (max-width: 700px) {
@@ -1866,6 +1930,11 @@ footer .bottom .container .p span {
   background-color: var(--main);
   box-shadow: 0 0 10px #ccc inset;
 }
+@media (max-width: 600px) {
+  .blogs-page .blog-page {
+    padding: 30px 0;
+  }
+}
 .blogs-page .blog-page .phead {
   font-size: 20px;
   color: var(--green);
@@ -1984,6 +2053,11 @@ footer .bottom .container .p span {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  .projects-page .project {
+    padding: 30px 0;
+  }
 }
 .projects-page .project .container {
   display: flex;

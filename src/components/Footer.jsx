@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom'
 const Footer = () => {
   const navigate = useNavigate()
   return (
-    <footer>
+    <footer id='footer'>
 
     <div className="imgCover"> <img src={ImgSectionFooter} alt="" /> </div>
     <div className="top">
@@ -36,10 +36,10 @@ const Footer = () => {
 
         <ul className="en">
           <div className="h1"> كن علي تواصل </div>
-          <li> <img src={ Email }/> info@bwaqf.ae </li>
           <li> <img src={ place }/> 10A st. Villa 47 <br/> Umm Al Sheif, Dubai </li>
-          <li> <img src={ phone }/> +97143339645 </li>
-          <li> <img src={ phone2}/> +971554541122 </li>
+          <li> <img src={ Email }/> info@bwaqf.ae </li>
+          <li> <img src={ phone}/> +971554541122 </li>
+          <li> <img src={ phone2 }/> +97143339645 </li>
         </ul>
 
         <ul>

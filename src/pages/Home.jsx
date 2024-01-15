@@ -7,16 +7,14 @@ import Imgblog from "../assets/blog/1.webp"
 import share from "../assets/share.webp"
 import Footer from '../components/Footer'
 
-import Img1 from "../assets/partners/1.webp"
-import Img2 from "../assets/partners/2.webp"
-import Img3 from "../assets/partners/3.webp"
-import Img4 from "../assets/partners/4.webp"
+
 import { useNavigate } from 'react-router-dom'
 
 import user  from "../assets/icon/user.webp"
 import email from "../assets/icon/email.webp"
 import phone from "../assets/icon/phone.webp"
 import messa from "../assets/icon/message.webp"
+import Partners from '../components/Partners'
 
 const Home = () => {
   const Navigate = useNavigate()
@@ -157,28 +155,7 @@ const Home = () => {
     </div>
   </div>
 
-  <div className="partners bs-white">
-    <div className="h1"> شركائنا</div>
-    <div className="phead">شركاء في بناء مستقبل أوقافًا مستدامة</div>
-    <div className="container">
-      <div className="box"> 
-        <img src={Img1} alt="" />
-        <div className="text"> <div className="h2">د. وائل السعيد</div> <div className="p"> نعمل  في الأوقاف على تحقيق الأهداف من خلال دعم المشاريع الخيرية والإنسانية وتقديم الدعم المالي والمعنوي لها</div> </div>
-      </div>
-      <div className="box"> 
-        <img src={Img2} alt="" />
-        <div className="text"> <div className="h2">د. وائل السعيد</div> <div className="p"> نعمل  في الأوقاف على تحقيق الأهداف من خلال دعم المشاريع الخيرية والإنسانية وتقديم الدعم المالي والمعنوي لها</div> </div>
-      </div>
-      <div className="box"> 
-        <img src={Img3} alt="" />
-        <div className="text"> <div className="h2">د. وائل السعيد</div> <div className="p"> نعمل  في الأوقاف على تحقيق الأهداف من خلال دعم المشاريع الخيرية والإنسانية وتقديم الدعم المالي والمعنوي لها</div> </div>
-      </div>
-      <div className="box"> 
-        <img src={Img4} alt="" />
-        <div className="text"> <div className="h2">د. وائل السعيد</div> <div className="p"> نعمل  في الأوقاف على تحقيق الأهداف من خلال دعم المشاريع الخيرية والإنسانية وتقديم الدعم المالي والمعنوي لها</div> </div>
-      </div>
-    </div>
-  </div>
+  <Partners />
 
   <div className="blog">
     <div className="h1"> احدث المدونات</div>
@@ -197,7 +174,6 @@ const Home = () => {
 
         <div className="h2"> استمتع في الحديقه  </div>
         <div className="p">الوصول إليها عندما التي تحتاج إلى موارد النظام، يكون النظام في حالة الجديقة.</div>
-        <div className="bt" onClick={_=> Navigate("/blogs")}> معرفه المزيد </div>
       </div>
       
       <div className="box">
@@ -212,7 +188,6 @@ const Home = () => {
 
         <div className="h2"> استمتع في الحديقه  </div>
         <div className="p">الوصول إليها عندما التي تحتاج إلى موارد النظام، يكون النظام في حالة الجديقة.</div>
-        <div className="bt" onClick={_=> Navigate("/blogs")}> معرفه المزيد </div>
       </div>
 
       <div className="box">
@@ -227,10 +202,10 @@ const Home = () => {
 
         <div className="h2"> استمتع في الحديقه  </div>
         <div className="p">الوصول إليها عندما التي تحتاج إلى موارد النظام، يكون النظام في حالة الجديقة.</div>
-        <div className="bt" onClick={_=> Navigate("/blogs")}> معرفه المزيد </div>
       </div>
 
     </div>
+    <div className="bt" onClick={_=> Navigate("/blogs")}>  اكتشف المزيد </div>
   </div>
 
   <div className="contact bs-white">

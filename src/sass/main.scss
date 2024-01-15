@@ -272,9 +272,10 @@ body{
   bottom: 20px;
   right: 20px;
   z-index: 10;
+  transition: .4s;
   a{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color:var(--green);
     display: flex;
     align-items: center;
@@ -282,27 +283,31 @@ body{
     border-radius: 2px;
     cursor: pointer;
     transition: .2s;
+    margin-right: 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+    }
     &:nth-child(1){background-color: unset;}
     &:nth-child(2){
-      // height: 35px;
-      // width: 35px;
       display: flex; align-items: center; justify-content: center;
       padding: 2px;
       background: transparent;
-      img{
-        height: 30px;
-        width: 30px;
-        object-fit: contain;
+      i{
+        height: 50px;
+        width: 50px;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
       }
     }
     &:hover{
       scale: .95;
     }
-    img{
-      width: 30px;
-      height: 30px;
-      transition: .2s;
-    }
+    
   }
 }
 
@@ -338,6 +343,7 @@ body {
   min-height: 50vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,6 +403,7 @@ body {
   min-height: 50vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -605,6 +612,7 @@ body {
   min-height: 50vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -693,23 +701,19 @@ body {
   min-height: 60vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
-
+  .slick-slide > div{
+    width: calc(100% - 20px);
+    margin: auto;
+  }
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     align-items: center;
-    @media (max-width:1200px) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width:650px) {
-      grid-template-columns: 1fr ;
-    }
     .box {
       width: 100%;
       min-height: 600px;
@@ -717,6 +721,8 @@ body {
       display: flex;
       flex-direction: column;
       gap: 5px;
+      margin-right: 10px;
+      cursor: grab;
       img {
         border: 3px solid var(--green);
         border-bottom-color: var(--main);
@@ -745,6 +751,7 @@ body {
   min-height: 30vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -868,6 +875,7 @@ body {
   min-height: 50vh;
   position: relative;
   padding: 50px 0 0;
+  @media (max-width:600px) { padding: 30px 0 0; }
   display: flex;
   flex-direction: column;
   // align-items: center;
@@ -892,8 +900,11 @@ body {
 
     @media (max-width:900px) {
       grid-template-columns: 1fr;
+      padding: 0 0 50px;
+      .h2-right{text-align: center; &::after , &::before{right: 50%; transform: translateX(50%);}}
       .right {
         height: 80px !important;
+        // margin-bottom: 30px;
         img{
           width: 250px;
           height: 70px;
@@ -912,7 +923,8 @@ body {
       .left{
         top: 0 !important;
         width: 100% !important;
-        margin: 20px 0 30px 0 !important;
+        margin: 0 0 10px 0 !important;
+        order: -1;
       }
     }
     @media (max-width:700px) {
@@ -1243,6 +1255,7 @@ footer {
     min-height: 50vh;
     position: relative;
     padding: 50px 0;
+    @media (max-width:600px) { padding: 30px 0; }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1313,6 +1326,7 @@ footer {
     min-height: 50vh;
     position: relative;
     padding: 50px 0;
+    @media (max-width:600px) { padding: 30px 0; }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1489,6 +1503,7 @@ footer {
   min-height: 50vh;
   position: relative;
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1544,6 +1559,7 @@ footer {
 // Services page
 .services-page {
   padding: 50px 0;
+  @media (max-width:600px) { padding: 30px 0; }
   position: relative;
   min-height: 600px;
   background: var(--main);
@@ -1684,6 +1700,7 @@ footer {
   min-height: 30vh ;
   position: relative;
   padding: 50px 0  ;
+  @media (max-width:600px) { padding: 30px 0; }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1737,14 +1754,15 @@ footer {
     @media (max-width:900px) {
       grid-template-columns: 1fr;
       width: 95% !important;
-      padding-bottom: 30px;
+      // padding-bottom: 30px;
       .middle {
         min-height: unset !important;
         height: 500px !important;
         top: 0 !important;
-        margin: 10px 0 !important;
+        margin: 0 0 !important;
         outline: unset !important;
         border: unset !important;
+        margin-top: 15px !important;
         input , textarea {font-size: 15px !important;}
         .h2-right , .phead {
           margin : auto !important ;
@@ -1756,7 +1774,8 @@ footer {
       .left{
         top: 0 !important;
         width: 100% !important;
-        margin: 20px 0 30px 0 !important;
+        margin: 0 0 20px 0 !important;
+        order: -1;
 
       }
     }
@@ -1784,7 +1803,6 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 10px;
-      // box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.29), 5px 5px 9px rgba(94, 104, 121, 0.3);
       &::after{
         content: '';
         position: absolute;
@@ -1961,6 +1979,7 @@ footer {
     min-height: 30vh;
     position: relative;
     padding: 50px 0;
+    @media (max-width:600px) { padding: 30px 0; }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2092,6 +2111,7 @@ footer {
 .projects-page{
   .project{
     padding: 50px 0;
+    @media (max-width:600px) { padding: 30px 0; }
     position: relative;
     background-color: var(--main);
     display: flex;
