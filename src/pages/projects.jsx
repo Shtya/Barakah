@@ -78,13 +78,13 @@ const Projects = () => {
         </div>
 
         <div className="pagination">
-          <button   onClick={_=> Pagination({from:8 , to:12}) }  className={`btn-nav left-btn `} >   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="left-icon">     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />   </svg> </button>
+          <button   onClick={_=> Pagination({from:0 , to:4})}  className={`btn-nav left-btn `} >   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="left-icon">     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />   </svg> </button>
           <div className="page-numbers">
             <button  onClick={_=> Pagination({from:0 , to:4})}  className={`btn-page ${Next.from == 0 ? "btn-selected" : ""} `}    > 1</button>
             <button  onClick={_=> Pagination({from:4 , to:8})}  className={`btn-page ${Next.from == 4 ? "btn-selected" : ""} `}    > 2</button>
             <button  onClick={_=> Pagination({from:8 , to:12})}  className={`btn-page ${Next.from == 8 ? "btn-selected" : ""} `}    > 3</button>
           </div>
-          <button onClick={_=> Pagination({from:0 , to:4})}  className={`btn-nav right-btn `}  > <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="right-icon"> <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /> </svg> </button>
+          <button onClick={_=>  Pagination({from:8 , to:12}) }  className={`btn-nav right-btn `}  > <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="right-icon"> <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /> </svg> </button>
         </div>
 
       </div>
