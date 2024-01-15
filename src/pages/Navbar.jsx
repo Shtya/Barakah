@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useState } from 'react'
-import Logo from "../assets/logo-black.png"
+import Logo from "../assets/logo-black.webp"
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar1 = memo(() => {

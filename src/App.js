@@ -1,4 +1,4 @@
-import {Routes , Route} from "react-router-dom"
+import {Routes , Route, useLocation} from "react-router-dom"
 
 import "./sass/main.css"
 import Home from './pages/Home'
@@ -8,10 +8,22 @@ import ContactUs from "./pages/contact"
 import Blogs from "./pages/blogs"
 import Projects from "./pages/projects"
 import { Helmet } from 'react-helmet';
-import whats from "./assets/whats.png"
-import up from "./assets/up3.png"
+import whats from "./assets/whats.webp"
+import up from "./assets/icon/up3.png"
 import Error from "./pages/Error"
-import Logo from "./assets/Logo.png"
+import Logo from "./assets/Logo.webp"
+import { useEffect } from "react"
+
+
+function ScrollToTopOnMount() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+
+  return null;
+}
 
 const App = () => {
 
@@ -26,7 +38,7 @@ const App = () => {
         <a href="https://api.whatsapp.com/send?phone=+97143339645&text=السلام%2C%20عليكم%2C%20ورحمة%2C%20الله%2C%20وبركاتة"> <img src={whats} alt="" /> </a>
         <a href="#up"> <img src={up} alt="" /> </a>
       </div>
-      
+      <ScrollToTopOnMount />
       <Routes>
         <Route index   path='/'    element={<Home />} />                           
         <Route index   path='/about-us'    element={<About />} />                           
