@@ -838,6 +838,9 @@ body {
     font-size: 14px;
   }
 }
+.blog .bt {
+  margin: 20px 0 -10px;
+}
 
 .contact {
   min-height: 50vh;
